@@ -1,4 +1,4 @@
-package main.java.classes_objects.class_problems.MiniSystem;
+package main.java.classes_objects.class_problems.F5_MiniSystem;
 
 class FeeAccount {
     private String regNo;
