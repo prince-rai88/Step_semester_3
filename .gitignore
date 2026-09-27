@@ -1,0 +1,15 @@
+# IntelliJ IDEA generated files
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/usage.statistics.xml
+.idea/dictionaries
+.idea/shelf
+*.iml
+
+# Compiled output
+out/
+*.class
+
+# OS generated files
+.DS_Store
+Thumbs.db
