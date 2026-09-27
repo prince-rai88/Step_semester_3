@@ -2,24 +2,11 @@ package access_modifiers_encapsulation.class_problems.F1_FieldVisibility;
 
 public class PatientRecord {
 
-    // Sensitive internal identifier: private
     private String patientId;
-
-    // Ward information accessible to subclasses/package: protected
     protected String wardCode;
-
-    // Clinical score accessible to subclasses/package: protected
     protected double vitalsScore;
-
-    // Facility name is general public information: public
     public String facilityName;
 
-    /**
-     * Parameterized constructor serving as a validation gate.
-     * Rejects invalid patientId (null, blank, whitespace-only, or length < 4).
-     *
-     * Note: No no-argument constructor is provided.
-     */
     public PatientRecord(String patientId, String wardCode, double vitalsScore, String facilityName) {
         if (patientId == null || patientId.trim().length() < 4) {
             throw new IllegalArgumentException(
